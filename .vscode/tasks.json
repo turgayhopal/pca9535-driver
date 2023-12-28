@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: arm-linux-gnueabihf-g++.exe build active file",
+			"command": "C:\\SysGCC\\raspberry\\bin\\arm-linux-gnueabihf-g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}", "${fileDirname}\\lib\\src\\pca9535.cpp",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\SysGCC\\raspberry\\bin\\arm-linux-gnueabihf-g++.exe"
+		}
+	]
+}
