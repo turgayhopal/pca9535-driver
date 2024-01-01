@@ -10,14 +10,14 @@
 #include <sys/ioctl.h>
 #include <linux/i2c-dev.h>
 
-#define CR_INPUT_PORT_0 0x00
-#define CR_INPUT_PORT_1 0x01
-#define CR_OUTPUT_PORT_0 0x02
-#define CR_OUTPUT_PORT_1 0x03
-#define CR_POLARITY_INV_PORT_0 0x04
-#define CR_POLARITY_INV_PORT_1 0x05
-#define CR_CONFIGURATION_PORT_0 0x06
-#define CR_CONFIGURATION_PORT_1 0x07
+constexpr uint8_t CR_INPUT_PORT_0 = 0x00;
+constexpr uint8_t CR_INPUT_PORT_1 = 0x01;
+constexpr uint8_t CR_OUTPUT_PORT_0 = 0x02;
+constexpr uint8_t CR_OUTPUT_PORT_1 = 0x03;
+constexpr uint8_t CR_POLARITY_INV_PORT_0 = 0x04;
+constexpr uint8_t CR_POLARITY_INV_PORT_1 = 0x05;
+constexpr uint8_t CR_CONFIGURATION_PORT_0 = 0x06;
+constexpr uint8_t CR_CONFIGURATION_PORT_1 = 0x07;
 
 typedef struct
 {
